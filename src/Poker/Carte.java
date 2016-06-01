@@ -1,3 +1,6 @@
+package Poker;
+
+
 // classe carte composé de la valeur de la carte (as, roi, 2, 3...) et du type (coeur carreaux...) ils sont définis
 //par un entier qui ira ensuite chercher les valeurs réelles dans les tableaux
 public class Carte {
@@ -23,4 +26,16 @@ public class Carte {
 		return (this.valCarte[numval] + " de " + this.symbCarte[numsymb]);
 		
 	}
+	
+	public String getsymb(int x){
+		
+		return symbCarte[x];
+	}
+	
+	public String getVal(int x){
+		
+		return valCarte[x];
+	}
+	
+
 }

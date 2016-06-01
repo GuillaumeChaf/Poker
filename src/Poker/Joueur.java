@@ -1,3 +1,5 @@
+package Poker;
+
 // classe joueur définis par nom, prenom, nombre de jetons, et ses 2 cartes en sous classe
 public class Joueur {
 	
@@ -7,19 +9,15 @@ public class Joueur {
 	Carte C1;
 	Carte C2;
 	
-	public Joueur(String prenom, String nom, int nbjetons, Carte C1, Carte C2){
+	public Joueur(String prenom, String nom, int nbjetons){
 		
 		this.nom = nom;
 		this.prenom = prenom;
 		this.nbjetons = nbjetons;
-		this.C1 = C1;
-		this.C2 = C2;
+		this.C1 = null;
+		this.C2 = null;
 	}
 	
-	public Joueur(Joueur J1){
-		
-		this(J1.prenom,J1.nom,J1.nbjetons,J1.C1,J1.C2);
-	}
 
 	public String toString(){
 		
